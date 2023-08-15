@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: test-app
-        image: mredman/unity:2-dev
+        #image: mredman/unity:2-dev
+        image: {{ .Values.image }}
         resources:
           limits:
             memory: "128Mi"
