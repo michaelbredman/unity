@@ -6,6 +6,9 @@ app = Flask(__name__)
 def hello_geek():
     return '<h1>Hello from Flask & Docker</h2>'
 
+@app.route('/time')
+def time():
+    return '<h2>time</h2>'
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5001)
