@@ -1,1 +1,1 @@
-replicas: <+>
+replicas: <+serviceVariable.replicas>
