@@ -5,7 +5,7 @@ kind: Deployment
 metadata:
   name: sample-webapp
 spec:
-  replicas: {{ .Value.replicas }}
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       app: sample-webapp
