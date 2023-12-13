@@ -1,1 +1,1 @@
-image: <+artifact.image>
+replicas: <+serviceVariables.replicas>
